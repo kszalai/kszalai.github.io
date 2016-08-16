@@ -1,0 +1,35 @@
+<!-- Kyle Szalai (E01006866) -->
+<!-- COSC 231 -->
+<!-- 2/9/15 -->
+<!-- Haynes MW 10:00am -->
+<!-- JavaScript Lab -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lab 02/09</title>
+		<link rel="stylesheet" type="text/css" href="lab0209.css">
+		<script>
+			function addSub()
+			{
+				var val1 = parseInt(prompt("Enter your first value: "));
+				var val2 = parseInt(prompt("Enter your second value: "));
+				var ops = parseInt(prompt("Enter 1 for addition or 2 for subtraction: ",1));
+				var total;
+			
+				if(ops==1) {
+					total = val1 + val2;
+					alert(val1 + " + " + val2 + " = " + total);
+				}
+				else {
+					total = val1 - val2;
+					alert(val1 + " - " + val2 + " = " + total);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>JavaScript Add or Subtract</h1>
+		<br />
+		<button onClick="addSub();">Add or Subtract?</button>
+	</body>
+</html>

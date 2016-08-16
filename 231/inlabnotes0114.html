@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Notes 01/14</title>
+		<style>
+			body	{
+				font-family:helvetica;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>Image Mapping</h3>
+		<img src="http://upload.wikimedia.org/wikipedia/commons/a/a9/Planets2013.jpg" alt="Planets" usemap="#planetmap">
+		<map name="planetmap">
+			<area shape="rect" coords="0,0,82,186" alt="meh?" title="swags?">
+		</map>
+		
+		<!-- Forms Continued -->
+		<br />
+		<br />
+		<h3>Example Form</h3>
+		<form>
+			<!-- Name attributes allow for communication between JScript and the page -->
+			<p>
+				Please enter a brief description of your requirements: <br />
+				<textarea rows="5" cols="40" name="description">
+					65 wat.
+				</textarea>
+			</p>
+			<p>
+				<b><u>Pick an animal</u></b>
+				<br />
+				Doge <input type="radio" name="pet">
+				Cat <input type="radio" name="pet">
+				Frogzilla <input type="radio" name="pet">
+			</p>
+			
+			<p>
+				<b><u>Pick a name</u></b>
+				<br />
+				Phil <input type="radio" name="name">
+				Fish <input type="radio" name="name">
+				Barry? <input type="radio" name="name">
+			</p>
+			
+			<p>
+				<b><u>Pick a food</u></b>
+				<br />
+				Sandvich <input type="radio" name="food">
+				onyonreng <input type="radio" name="food">
+				pizza <input type="radio" name="food">
+			</p>
+			
+			<!-- Drop Down List -->
+			<p>
+				<b><u>Pick a vehicle</u></b>
+				<br />
+				<select name="vehicle">
+					<option value="dangerzone">The Danger Zone</option> 
+					<option value="oldworkmobile">The Old Workmobile</option> 
+					<option value="newworkmobile">The New Workmobile</option>
+					<option value="barrytruck">Barry's Truck</option>
+				</select> 
+			</p>
+		</form>
+	</body>
+</html>

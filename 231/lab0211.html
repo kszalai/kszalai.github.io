@@ -1,0 +1,50 @@
+<!-- Kyle Szalai (E01006866) -->
+<!-- COSC 231 -->
+<!-- 2/11/15 -->
+<!-- Haynes MW 10:00am -->
+<!-- Arithmetic Training App Lab -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lab 02/11</title>
+		<script>
+			//Will generate a random number between 0 and 9
+			function generateRandom()
+			{
+				var randNum = Math.floor(Math.random()*10);
+				return randNum;
+			}
+			
+			//Will run 5 times and return the amount of correct answers to the user
+			function timeForMath()
+			{
+				var score = 0;
+				for(var i=0;i<5;i++)
+				{
+					var op1 = generateRandom();
+					var op2 = generateRandom();
+					var ans1 = parseFloat(prompt(op1 + " + " + op2 + " = "));
+					if((op1+op2)==ans1)
+					{
+						score++;
+						alert("Correct!");
+					}
+					else
+					{
+						alert("Ouch! Sorry, the correct answer is " + (op1+op2));
+					}
+				}
+				alert("Score: " + score + "/5");
+			}
+		</script>
+		<style>
+			body	{
+				font-family:"Helvetica",arial,sans serif;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>Basic Arithmetic Training</h3>
+		<button onClick="timeForMath();">Begin Testing</button>
+	</body>
+</html>

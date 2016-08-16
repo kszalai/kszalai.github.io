@@ -1,0 +1,30 @@
+<!-- Kyle Szalai (E01006866) -->
+<!-- COSC 231 -->
+<!-- Haynes MW 10:00am -->
+<!-- Lab 03/04 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lab 03/04</title>
+	</head>
+	<body onload="helloPopUp();">
+		<div id="container" style="width:100vw; height:100vh;">
+			<img src="http://burnie.com/dump/cowbell.gif"/>
+		</div>
+		<script>
+			var halfWidth = Math.floor((document.body.clientWidth)/2);
+			var halfHeight = Math.floor((document.body.clientHeight)/2);
+			function helloPopUp ()	{
+				//alert("Current width :" + document.body.clientWidth);
+				//alert("halfWidth is :" + halfWidth);
+				//alert("Current height :" + document.body.clientHeight);
+				//alert("halfHeight is :" + halfHeight);
+				var myWindow = window.open("","POP-UP!", "height = "+ halfHeight + ", width = " + halfWidth);
+				myWindow.document.write("<p>sup?</p>");
+				var bounds = document.body.getBoundingClientRect();
+				myWindow.moveTo(bounds.left+50, bounds.top+50);
+				myWindow.focus();
+			}
+		</script>
+	</body>
+</html>

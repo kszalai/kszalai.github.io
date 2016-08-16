@@ -1,0 +1,60 @@
+/*******************************
+ * Kyle Szalai (E01006866)
+ * COSC 231
+ * Haynes MW 10:00am
+ * 4/8/15
+ * Project 4
+ * pp4.css 
+ *******************************/
+
+div.player-stats	{
+	font-family:Arial;
+	position:absolute;
+	left:650px;
+	top:200px;
+	width:250px;
+	border: solid black 5px;
+	padding:5px;
+}
+ 
+#spriteBox	{
+	position:absolute;
+	left:500px;
+	top:500px;
+}
+
+#recharge	{
+	background-color:#000000;
+	position:absolute;
+	left:300px;
+	top:300px;
+	width:32px;
+	height:30px;
+}
+
+#box	{
+	background-color:#fdd7a8;
+	border-style:solid;
+	border-width:5px;
+	width:600px;
+	height:600px;
+	z-index:0;
+}
+
+div.goldBox	{
+	position:absolute;
+	z-index:0;
+}
+
+div.monster	{
+	position:absolute;
+	z-index:1;
+}
+
+#instructions	{
+	font-family:Arial;
+	position:absolute;
+	width:300px;
+	left:650px;
+	top:50px;
+}

@@ -1,0 +1,45 @@
+ div.container	{
+ 	position:relative;
+ }
+ 
+div.yellow	{
+ 	padding:0px;
+ 	position:absolute;
+ 	background-color:yellow;
+}
+
+div.red	{
+ 	padding:0px;
+ 	position:absolute;
+ 	background-color:red;
+}
+
+div.blue	{
+ 	padding:0px;
+ 	position:absolute;
+ 	background-color:blue;
+}
+
+div.black	{
+ 	padding:0px;
+ 	position:absolute;
+ 	background-color:black;
+}
+
+div.white	{
+ 	padding:0px;
+ 	position:absolute;
+ 	background-color:white;
+}
+
+div.green	{
+ 	padding:0px;
+ 	position:absolute;
+ 	background-color:green;
+}
+
+div.gold	{
+ 	padding:0px;
+ 	position:absolute;
+ 	background-color:gold;
+}

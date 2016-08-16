@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Notes 02/04</title>
+		<script>
+			/* This is a JS comment */
+			var x; /* var declares a variable */
+			/* This variable has no specified type */
+			/* The most recent type change is the type of the var */
+			/* ; is a separator in JS */
+			/* x is known through to the last end script tag */
+			/* The purpose of var is to specify scope of the variable */
+			/* Declaring it here allows for global scope */
+			
+			function getAndDisplay() {
+				var n = prompt("Enter a value: ");
+				alert("You entered: " + n);
+			}
+			
+			/* JS is case sensitive */
+			/* Functions can sometimes return values, sometimes it cannot */
+			/* You can specify what it returns */
+			
+			function increment(x, delta) {
+				return x+delta;
+			}
+		</script>
+	</head>
+	<body>
+		<button onClick="getAndDisplay();" > Click me </button>
+		<script>
+			alert("x: " + x);
+			
+			/* alert waits for the user to click ok */
+			
+			x = prompt("Enter a value for x: ", 3);
+			d = prompt("Enter a value to increment: ", 1);
+			
+			alert("x: " + x + "      d: " + d + "         incremented value: " + increment(parseInt(x),parseInt(d)));
+			 alert("incremented value, where x and d are converted to number: " + increment( parseInt(x), parseInt(d)));
+		</script>
+	</body>
+</html>

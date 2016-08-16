@@ -1,0 +1,32 @@
+/*******************************
+ * Kyle Szalai (E01006866)
+ * COSC 231
+ * Haynes MW 10:00am
+ * 2/16/15
+ * Project 2
+ * pp2.css 
+ *******************************/
+ body	{
+ 	font-family:"Helvetica",arial,sans;
+ 	background-color:/*#ffcc80*/#ffffff;
+ }
+ 
+ div.container	{
+ 	position:relative;
+ 	margin:auto;
+ 	width:500x;
+ }
+ 
+ div.theTop	{
+	width:100%;
+	margin:0 auto;
+ }
+ 
+ span.title	{
+	font-size:36px;
+	color:#cd503c;
+ }
+ 
+ span.specs	{
+	color:#4c5f65;
+ }

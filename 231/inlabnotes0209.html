@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Notes 02/09</title>
+		<style>
+			body	{
+				font-family:"Helvetica",arial,sans serif;
+			}
+		</style>
+		<script>
+			var x = "initialize";
+			function fun1() {
+			   x = parseInt(prompt('enter a value'));
+			   alert(x + x);
+			}
+	
+			function add() {
+			  x = parseInt(prompt("enter value"));
+			  y = parseInt(prompt("enter second value"));
+			  alert('answer is: ' + (x + y) );
+			  }
+	  
+			function fun2() {
+			  var height = parseInt(prompt('enter new height for green div'));
+			  
+			  id = document.getElementById("body0");
+			  id.innerHTML = 
+				'<div id="div0" style="background-color:green; width:100px; height:' +
+				height +
+				'px;"> </div>'  +
+				'\n<button onClick="fun2();"> click me to change height </button>' +
+				'\n<button onClick="fun3();"> click me to change color </button>';
+			}
+  
+			  function fun3() {
+			  var color = prompt('enter new color for div');
+	  
+			  id = document.getElementById("body0");
+			  id.innerHTML = 
+				'<div id="div0" style="background-color:' +
+				color +
+				'; width:100px; height:100px;"> </div>' +
+				'\n<button onClick="fun2();"> click me to change height </button>' +
+				'\n<button onClick="fun3();"> click me to change color </button>'
+	  
+			  }
+	  
+	  
+		  </script>
+	</head>
+	<body id="body0">
+		<!-- Averaging Numbers -->
+		<script>
+			var max = parseFloat(prompt("Enter the number of values", 3));
+			var total = 0;
+
+			for (i = 0; i < max; i++) {
+				value = parseInt(prompt("Next value: ", 1));
+				total += value;
+			}
+
+			alert("average is: " + total/max);
+		</script>
+		
+		<div id="div0" style="background-color:green; width:100px; height:100px;"> </div>
+   
+	   <button onClick="fun2();"> click me to change height </button>
+	   <button onClick="fun3();"> click me to change color </button>
+
+   
+	   <script>
+		 //add();
+	   </script>
+	</body>
+</html>

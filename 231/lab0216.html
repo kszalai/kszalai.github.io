@@ -1,0 +1,40 @@
+<!-- Kyle Szalai (E01006866) -->
+<!-- COSC 231 -->
+<!-- Haynes MW 10:00am -->
+<!-- Lab 02/16 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lab 02/16</title>
+		<style>
+			body	{
+				font-family:"Helvetica",arial,sans serif;
+			}
+		</style>
+		<script>
+			//Variables for Time
+			var time = 4;
+			var timer = setInterval('updateTime()',1000);
+			
+			//Function that will update the time and then display
+			//a new image when time is up
+			function updateTime()
+			{
+				document.getElementById("timer").innerHTML = time;
+				time--;
+				if(time==0)
+				{
+					clearInterval(timer);
+					var id = document.getElementById("image");
+					id.src = "http://i.imgur.com/4yW1tq4.gif";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<br />
+		<br />
+		<img src="http://i.imgur.com/LD4ryLo.jpg" alt="VW Golf" width="400px" id="image"/>
+		<p id="timer">5</p>
+	</body>
+</html>

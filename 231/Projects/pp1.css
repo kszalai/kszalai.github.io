@@ -1,0 +1,117 @@
+/*******************************
+ * Kyle Szalai (E01006866)
+ * COSC 231
+ * Haynes MW 10:00am
+ * 2/4/15
+ * Project 1 - Painting Mosaic
+ *
+ * pp1 CSS for pp1.html
+ * This is the style sheet being
+ * used for the pp1.html file. 
+ * 
+ * Painting Used: Far and Away by Leonid Afremov
+ * Source: http://leonidafremov.deviantart.com/art/FAR-AND-AWAY-original-oil-on-canvas-painting-360384281
+ *******************************/
+ body	{
+ 	font-family:"Helvetica", arial, sans;
+ }
+ 
+ /*div Styles*/
+ div.container	{
+ 	position:relative;
+ }
+ 
+ div.top-left	{
+ 	padding:0px;
+ 	position:absolute;
+ 	background-color:green;
+ 	opacity:0.75;
+ 	border-top:4px solid black;
+ 	border-left:4px solid black;
+ 	border-right:2px solid black;
+ 	border-bottom:2px solid black;
+ }
+ 
+ div.top-right	{
+ 	padding:0px;
+ 	position:absolute;
+ 	background-color:green;
+ 	opacity:0.75;
+ 	border-top:4px solid black;
+ 	border-left:2px solid black;
+ 	border-right:4px solid black;
+ 	border-bottom:2px solid black;
+ }
+ 
+div.middle-left	{
+ 	padding:0px;
+ 	position:absolute;
+ 	background-color:green;
+ 	opacity:0.75;
+ 	border-top:2px solid black;
+ 	border-left:4px solid black;
+ 	border-right:2px solid black;
+ 	border-bottom:2px solid black;
+ }
+
+div.middle-left-trans	{
+ 	padding:0px;
+ 	position:absolute;
+ 	opacity:0.75;
+ 	border-top:2px solid black;
+ 	border-left:4px solid black;
+ 	border-right:2px solid black;
+ 	border-bottom:2px solid black;
+ }
+ 
+div.middle-mid	{
+ 	padding:0px;
+ 	position:absolute;
+ 	background-color:green;
+ 	opacity:0.75;
+ 	border:2px solid black;
+ }
+  
+div.middle-right	{
+ 	padding:0px;
+ 	position:absolute;
+ 	background-color:green;
+ 	opacity:0.75;
+ 	border-top:2px solid black;
+ 	border-left:2px solid black;
+ 	border-right:4px solid black;
+ 	border-bottom:2px solid black;
+ }
+ 
+div.bottom-left	{
+ 	padding:0px;
+ 	position:absolute;
+ 	background-color:green;
+ 	opacity:0.75;
+ 	border-top:2px solid black;
+ 	border-left:4px solid black;
+ 	border-right:2px solid black;
+ 	border-bottom:4px solid black;
+ }
+ 
+div.bottom-mid	{
+ 	padding:0px;
+ 	position:absolute;
+ 	background-color:green;
+ 	opacity:0.75;
+ 	border-top:2px solid black;
+ 	border-left:2px solid black;
+ 	border-right:2px solid black;
+ 	border-bottom:4px solid black;
+ }
+ 
+div.bottom-right	{
+ 	padding:0px;
+ 	position:absolute;
+ 	background-color:green;
+ 	opacity:0.75;
+ 	border-top:2px solid black;
+ 	border-left:2px solid black;
+ 	border-right:4px solid black;
+ 	border-bottom:4px solid black;
+ }

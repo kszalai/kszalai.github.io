@@ -1,0 +1,110 @@
+<!-- Kyle Szalai (E01006866) -->
+<!-- COSC 231 -->
+<!-- 03/02/15 -->
+<!-- Jumping Jack Lab -->
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>bouncy - beginning animation</title>
+
+		<script language="JavaScript" type="text/javascript">
+
+			var timer;
+			var deltaX = 5;		// number of x pixels moved each call
+			var deltaY = 5;		// number of y pixels moved each call
+			var left = 0;
+			var top = 0;
+			var timerOn = false;
+
+			function moveBy(objectId, x, y) {
+				//Move horizontally
+				var left = parseInt(document.getElementById(objectId).style.left);
+				left = ((left+x) % horzPosEnd) + "px";
+				document.getElementById(objectId).style.left = left;
+				//alert(document.getElementById(objectId).style.left);
+				
+				//Move vertically
+				var top = parseInt(document.getElementById(objectId).style.top);
+				top = ((top+y) % vertPosEnd) + "px";
+				document.getElementById(objectId).style.top = top;
+				//alert(document.getElementById(objectId).style.top);
+			}
+	
+			function startTimer(objectId, startHorzPoint, endHorzPoint, startVertPoint, endVertPoint) {
+				if (timerOn) return;
+					timerOn = true;
+				var cmd = "moveBy(\'" + objectId + "\', " + deltaX + ", " + deltaY + ")" ;
+				//alert("cmd is: " + cmd);
+				timer = setInterval(cmd, 50);
+			}
+
+			function stopTimer() {
+				timerOn = false;
+				clearInterval(timer);
+			}
+	
+		</script>	
+	</head>
+
+	<body bgcolor="#fefefe">
+
+		<div id="jack" 
+		 style="position: absolute; top: 150px; left: 0px; z-index: 3; width: 100;">
+			<img name="jack" src="http://www.gifs.net/Animation11/Sports/Other_Exercises/Jumping_jacks.gif" 
+				 width="100" height="100" border="0" alt="jumping jack">
+		</div>
+
+		<div id="brick1" 
+		 style="position: absolute; top: 30px; left: 100px; z-index: 1;">
+			<img src="http://www.eddingschronicles.com/fansite/bookh-tree.gif" width="76" 
+				 height="175" border="0" alt="column">
+		</div>
+		
+		<div id="brick2" 
+		 style="position: absolute; top: 200px; left: 300px; z-index: 4;">
+			<img src="http://www.eddingschronicles.com/fansite/bookh-tree.gif" width="76" 
+				 height="75" border="0" alt="column">
+		</div>
+		
+		<div id="3" 
+		 style="position: absolute; top: 30px; left: 500px; z-index: 2;">
+			<img src="http://www.eddingschronicles.com/fansite/bookh-tree.gif" width="76" 
+				 height="175" border="0" alt="column">
+		</div>
+
+		<form style="position: absolute; top: 350px; left: 294px;">
+			<input type="button" value="Start"
+				   onClick="startTimer('jack', horzPosStart, horzPosEnd, vertPosStart, vertPosEnd);">
+			<!--<input style="position: absolute; top: 350px; left: 320px;">-->
+			<input type="button" value="Stop"
+				   onClick="stopTimer();">
+		</form>
+
+		<script language="JavaScript" type="text/javascript">
+			var horzPosStart = 0;
+			var horzPosEnd = 0;
+			var vertPosStart = 0;
+			var vertPosEnd = 0;
+			var objWidth = 100;			// set to width of animated object
+			var objHeight = 100;		//set to height of animated object
+			if(window.innerWidth) {
+				horzPosEnd = window.innerWidth;
+			} 
+			else if (window.document.body.clientWidth) {
+				horzPosEnd = window.document.body.clientWidth;
+				
+			}
+			if(window.innerHeight)	{
+				vertPosEnd = window.innerHeight;
+			}
+			else if (window.document.body.clientHeight)	{
+				vertPosEnd = window.document.body.clientHeight;
+			}
+			horzPosStart = objWidth;
+			horzPosEnd -= objWidth;
+			vertPosStart = objHeight;
+			vertPosEnd -= objHeight;
+		</script>
+	</body>
+</html>

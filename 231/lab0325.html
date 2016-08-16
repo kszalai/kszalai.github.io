@@ -1,0 +1,48 @@
+<!-- Kyle Szalai (E01006866) -->
+<!-- COSC 231 -->
+<!-- Haynes MW 10:00am -->
+<!-- 03/25/15 -->
+<!-- Lab 03/25 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+  
+		   for (var i = 0; i < 10; i++) 
+		   {
+			  alert("testing " + i);
+			  if ( (i % 2) == 0)
+			  	alert("even");
+			}
+	  
+	  		function calcFib()
+	  		{
+	  			var n = document.getElementById("n").value;
+	  			var result = document.getElementById("result");
+	  			result.innerHTML = fib(n);
+	  			console.log(result.innerHTML);
+	  		}
+	  		
+	  		function fib(n)	{
+	  			console.trace();
+				if(n==1||n==2)
+				{
+					return 1;
+				}
+				else
+					return fib(n-1)+fib(n-2);
+			}
+	  
+		</script>
+	</head>
+
+	<body>
+		<p>Sample text.</p>
+		<br />
+		<p>Please enter an "n" to calculate the nth Fibonacci sequence</p>
+		<input type="text" id="n">
+		<button onclick="calcFib();">Calculate</button>
+		<br />
+		<p id="result"></p>
+	</body>
+</html>

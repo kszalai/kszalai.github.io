@@ -1,0 +1,30 @@
+/*******************************
+ * Kyle Szalai (E01006866)
+ * COSC 231
+ * Haynes MW 10:00am
+ * 3/17/15
+ * Project 3
+ * pp3.css 
+ *******************************/
+ 
+#spriteBox	{
+	position: absolute;
+	left: 500px;
+	top: 500px;
+}
+
+#box	{
+	background-color: #fdd7a8;
+	border-style:solid;
+	border-width:5px;
+	width: 600px;
+	height: 600px;
+}
+
+#instructions	{
+	font-family:Arial;
+	position: absolute;
+	width: 150px;
+	left: 650px;
+	top: 50px;
+}

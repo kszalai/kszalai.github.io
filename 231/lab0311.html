@@ -1,0 +1,40 @@
+<!-- Kyle Szalai (E01006866) -->
+<!-- COSC 231 -->
+<!-- Haynes MW 10:00am -->
+<!-- Lab 03/11 -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lab 03/11 - Zip Codes</title>
+		<script>
+			function testZips()	{
+				var theString = document.getElementById("zips").value;
+				var zipArray = theString.split(", ");
+				var regex = /^4\d{4}$/;
+				var results = document.getElementById("results");
+				var invalidCount = 0;
+				var breakOut = false;
+				for(var i=0;i<zipArray.length;i++)
+				{
+					if(!regex.test(zipArray[i]))
+					{
+						breakOut = true;
+						break;
+					}
+				}
+				
+				if(breakOut===false)
+					results.innerHTML = "All zip codes entered are valid!";
+				else
+					results.innerHTML = zipArray[i] + " is not valid";
+			}
+		</script>
+	</head>
+	<body>
+		<p>Please enter a valid Michigan zip code</p>
+		<input id="zips" type="text" value="48103, 48104, 48105, 48106, 48197, 48198">
+		<button onClick="testZips();">Test Zip Codes</button>
+		<p id="results"></p>
+	</body>
+</html>

@@ -1,0 +1,88 @@
+<!-- Kyle Szalai (E01006866) -->
+<!-- COSC 231 -->
+<!-- 2/9/15 -->
+<!-- Haynes MW 10:00am -->
+<!-- JavaScript Lab -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lab 02/09</title>
+		<link rel="stylesheet" type="text/css" href="lab0209.css">
+		<script>
+			function changeColors()
+			{
+				var y1 = document.getElementById("y1");
+				y1.className = "green";
+				var y2 = document.getElementById("y2");
+				y2.className = "green";
+				var y3 = document.getElementById("y3");
+				y3.className = "green";
+				var r1 = document.getElementById("r1");
+				r1.className = "gold";
+				var r2 = document.getElementById("r2");
+				r2.className = "gold";
+				var r3 = document.getElementById("r3");
+				r3.className = "gold";
+				var r4 = document.getElementById("r4");
+				r4.className = "gold";
+			}
+			
+			function restoreOriginal()
+			{
+				var y1 = document.getElementById("y1");
+				y1.className = "yellow";
+				var y2 = document.getElementById("y2");
+				y2.className = "yellow";
+				var y3 = document.getElementById("y3");
+				y3.className = "yellow";
+				var r1 = document.getElementById("r1");
+				r1.className = "red";
+				var r2 = document.getElementById("r2");
+				r2.className = "red";
+				var r3 = document.getElementById("r3");
+				r3.className = "red";
+				var r4 = document.getElementById("r4");
+				r4.className = "red";
+			}
+		</script>
+	</head>
+	<body>
+		<button onClick="changeColors();">Change Colors of Mondrian</button>
+		<button onClick="restoreOriginal();">Restore Original Colors</button>
+		
+		<br />
+		<p>Art by Kyle Szalai</p>
+		<a href="http://fc07.deviantart.net/fs12/i/2006/310/2/a/artist_series__Piet_Mondrian_by_gabriel_p.jpg">Image Base</a>
+		<br />
+		<br />
+		
+		<!-- Code from Mondrian Lab on 01/28 -->
+		<!-- Revisions were made to make it nicer for this lab -->
+		<div class="container">	
+			<div id="y1" class="yellow" style="left:0px; top:0px; width:75px; height:150px;"></div>
+			<div class="black" style="left:75px; top:0px; width:25px; height:615px;"></div>
+			<div id="r1" class="red" style="left:100px; top:0px; width:225px; height:150px;"></div>
+			<div class="black" style="left:325px; top:0px; width:25px; height:150px;"></div>
+			<div class="blue" style="left:350px; top:0px; width:225px; height:150px;"></div>
+			<div class="black" style="left:0px; top:150px; width:575px; height:25px;"></div> <!-- Black Bar -->
+			<div class="white" style="left:0px; top:175px; width:75px; height:265px;"></div>
+			<div class="white" style="left:100px; top:175px; width:300px; height:100px;"></div>
+			<div class="black" style="left:400px; top:175px; width:25px; height:440px;"></div>
+			<div class="black" style="left:100px; top:275px; width:475px; height:25px;"></div> <!--  Black Bar -->
+			<div class="blue" style="left:100px; top:300px; width:50px; height:100px;"></div>
+			<div class="black" style="left:150px; top:300px; width:25px; height:100px;"></div>
+			<div id="y2" class="yellow" style="left:175px; top:300px; width:125px; height:100px;"></div>
+			<div class="black" style="left:300px; top:300px; width:25px; height:315px;"></div>
+			<div class="blue" style="left:325px; top:300px; width:75px; height:100px;"></div>
+			<div id="r2" class="red" style="left:425px; top:300px; width:150px; height:100px;"></div>
+			<div class="black" style="left:100px; top:400px; width:475px; height:25px;"></div> <!-- Black Bar -->
+			<div id="r3" class="red" style="left:100px; top:425px; width:200px; height:190px;"></div>
+			<div class="white" style="left:325px; top:425px; width:75px; height:180px;"></div>
+			<div id="y3" class="yellow" style="left:425px; top:425px; width:150px; height:90px;"></div>
+			<div class="black" style="left:0px; top:440px; width:75px; height:25px;"></div>
+			<div class="blue" style="left:0px; top:465px; width:75px; height:150px;"></div>
+			<div class="black" style="left:425px; top:515px; width:150px; height:25px;"></div>
+			<div id="r4" class="red" style="left:425px; top:540px; width:150px; height:75px;"></div>
+		</div>
+	</body>
+</html>

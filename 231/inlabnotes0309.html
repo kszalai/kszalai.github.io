@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>03/09 - Regular Expressions</title>
+	</head>
+	<body>
+		<p>
+			00211<br />
+			<br />
+			(00)*(3|4)*(00) <br />
+			<br />
+			123 (A A*) 321 <br />
+			123A321 <br />
+			123AAAAA321 <br />
+			123321 - not allowed <br />
+			<br />
+			0 0* 1 2 2* <br />
+			012 <br />
+			01222 <br />
+			00012 <br />
+			000122222 <br />
+			<br />
+			<br />
+			Examples of strings recognized by <br />
+			((00) | (11)) 0* 2 <br />
+			<br />
+			000000000002 <br />
+			002 <br />
+			11000002<br />
+			112 <br />
+		</p>
+		<script>
+			alert(/00*33*/.test("03"));
+			var reg = /(012)|(345)/;
+			alert("012 is " + reg.test("012"));
+			alert("34 is " + reg.test("34"));
+			alert("0 12 is " + reg.test("0 12"));
+			var exp2 = /(012) | (lol)/; //this is showing that the expression is saying "white space OR white space"
+			alert("012 lol, is " + exp2.test("012 lol"));
+			alert("012lol, is " + exp2.test("012lol"));
+		</script>
+	</body>
+</html>
