@@ -3,22 +3,22 @@
 <html lang="en-US">
 	<head>
 		<title>Kyle Szalai | Mobile &amp; Front-End Developer</title>
-		<!--<link rel="shortcut icon" type="image/x-icon" href="http://media.giphy.com/media/5xtDaryppd5NqQMgT4I/giphy.gif">-->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="theme-color" content="#F44336">
-		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="fonts/devicon/devicon-colors.css"/>
+		<link rel="stylesheet" href="fonts/devicon/devicon.min.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
 		<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script async defer src="https://buttons.github.io/buttons.js"></script>
 	</head>
-	
 	<body>
-		<!-- Navigation -->
-		<nav class="navbar navbar-default" data-spy="affix-top">
-			<div class="container">
+		<nav class="navbar navbar-default navbar-fixed-top" data-spy="affix-top">
+			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 						<span class="icon-bar"></span>
@@ -27,204 +27,278 @@
 					</button>
 					<span class="navbar-brand">
 						<a href="http://github.com/kszalai" target="_blank" title="Check out my work on Github!" data-toggle="tooltip" data-trigger="hover" data-placement="bottom">
-							<img src="GitHub-Mark-32px.png" />
+							<i class="fa fa-github fa-2x"></i>
 						</a>
 						<a href="https://www.linkedin.com/in/kyle-szalai-41649bb3" target="_blank" title="Connect with me on LinkedIn!" data-toggle="tooltip" data-trigger="hover" data-placement="bottom">
-							<img src="In-Black-34px-TM.png" />
+							<i class="fa fa-linkedin fa-2x"></i>
 						</a>
 					</span>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
-						<li><a href="#about"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;About Me</a></li>
-						<li><a href="#workhist"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Work History</a></li>
-						<li><a href="#experience"><span class="glyphicon glyphicon-console"></span>&nbsp;Tech Experience</a></li>
+						<li class="active"><a href="index.html"><i class="fa fa-home fa-fw"></i></a></li>
+						<li><a href="#about"><i class="fa fa-info-circle fa-fw"></i>&nbsp;About Me</a></li>
+						<li><a href="#workhist"><i class="fa fa-briefcase fa-fw"></i>&nbsp;Work History</a></li>
+						<li><a href="#skills"><i class="fa fa-code fa-fw"></i>&nbsp;Tech Skills</a></li>
 						<!--<li><a href="resume.html">Resume</a></li>-->
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-education"></span>&nbsp;University Work<span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-graduation-cap fa-fw"></i>&nbsp;University Work<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="471/" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Database Principles">COSC 471</a></li>
-								<li><a href="231/" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Internet Based Computing">COSC 231</a></li>
+								<li><a href="471/" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="COSC 471">Database Principles</a></li>
+								<li><a href="231/" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="COSC 231">Internet Based Computing</a></li>
 								<li><a href="previousclasses.html">Past Classes</a></li>
 							</ul>
 						</li>
+						<li><a href="mailto:kyleszalai@gmail.com"><i class="fa fa-envelope-o fa-fw"></i>&nbsp;Contact</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
-		<!-- End Navigation -->
-		<!-- Main Content of Page -->
-		<div class="container-fluid bg-1 text-center">
-			<h1 style="font-size:50px">Kyle Szalai</h1>
-			<p title="Information About Me" style="font-size:15px">
-				Android & iOS Developer | Front-End Web Developer
-				<br />
-				EMU Alumni
-				<br />
-				<a title="Send me an email!" href="mailto:kyleszalai@gmail.com">kyleszalai@gmail.com</a>
-			</p>
+		<div class="container">
+			<div class="col-xs-12 card">
+				<div class="col-xs-4">
+					<img class="profile_pic pull-right" src="images/profile_pic.jpg" alt="Profile Picture"/>
+				</div>
+				<div class="col-xs-8 profile_card">
+					<h1>Kyle Szalai</h1>
+					<p>
+						Android &amp; iOS Developer | Front-End Web Developer
+						<br />
+						Eastern Michigan University Alumni
+						<br />
+						<a title="Send me an email!" href="mailto:kyleszalai@gmail.com">kyleszalai@gmail.com</a>
+						<br />
+						<div class="social">
+							<a href="https://github.com/kszalai"><i class="fa fa-github fa-2x"></i></a>
+							<a href="https://www.linkedin.com/in/kyle-szalai-41649bb3"><i class="fa fa-linkedin fa-2x"></i></a>
+							<a href="https://twitter.com/kyleszalai"><i class="fa fa-twitter fa-2x"></i></a>
+							<a href="https://instagram.com/kyleszalai"><i class="fa fa-instagram fa-2x"></i></a>
+						</div>
+					</p>
+				</div>
+			</div>
 		</div>
 		<br />
-		
-		<div class="container text-center" style="background-color: #f8f8f8; border-radius:5px 5px 0px 0px; padding: 10px 0px 10px 0px;">
-			<div class="col-sm-2 col-xs-0"></div>
-			<div class="col-sm-8 col-xs-12">
-				<h1>Featured Work</h1>
-				<h3>LEGO NXT Bluetooth Robot Android Controller</h3>
-				<div class="container-fluid col-xs-6 text-right" id="featProjImageContainer">
-					<img src="nxt-controller_1.png" alt="NXT-Controller" style="max-width: 100%;"/>
-				</div>
-				<div class="container-fluid col-xs-6 text-left" id="featProjDescContainer">
-					<p>
-						This app is a controller for a Lego NXT Mindstorms Robot. Connection is done through Bluetooth. This controller lets you drive your robot with 2 servo motors. My team and I made 2 modes of driving available in the app.
-						<ul>
-							<li>Directional Touch Driving</li>
-							<li>Accelerometer Driving</li>
-						</ul>
-						The app will also tell you how much battery is left on your robot. There is also a tab in the app where you can see the sensors available on the robot, but that is not functional as it was not required for the class.
-					</p>
-					<p>
-						Check out the repository on GitHub!
-					</p>
-					<a class="github-button" href="https://github.com/kszalai/NXT-Controller" data-icon="octicon-eye" data-style="mega" data-count-href="/kszalai/NXT-Controller/watchers" data-count-api="/repos/kszalai/NXT-Controller#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch kszalai/NXT-Controller on GitHub">Watch</a>
-				</div>
-			</div>
-			<div class="col-sm-2 col-xs-0"></div>
-		</div>
-		
-		<div id="about" class="container bg-2 text-center" style="border-radius: 0px 0px 0px 0px; padding:10px;">
-			<h1>About Me</h1>
-				<div class="col-sm-2 col-xs-0"></div>
-				<div class="container-fluid col-sm-8 col-xs-12 aboutme text-left">
-					<p>
-						Hello! My name is Kyle!<br /><br />
-						Currently I'm in southeast Michigan, and during the week I make my way out to Farmington Hills to work at Daifuku Webb Holding Co.<br /><br />
-						As a Software Engineer there, I'm currently one of the lead programmers on a new project there. I also took charge of giving their 
-						WebbView product a facelift by first making it more mobile friendly, and then by eventually implementing Bootstrap! I've gotten lots
-						of fantastic feedback on how the UI looks and currently my version of the UI is in use at Detroit Metro Airport and Baltimore 
-						Washington International Airport.<br /><br />
-						I recently just graduated with my Bachelor of Science degree in Computer Science from Eastern Michigan University! I did some minor studies
-						in mathematics while there. During my time at EMU, I did some pretty cool stuff! Notably one of my more favored things was my work I
-						did with Housing & Residence Life there in my RA position at Brown/Munson Apartments. I was also apart of Kick and Push Longboarding Club,
-						made the dean's list 6 times, and graduated magna cum laude with a 3.74 cumulative GPA.<br /><br />
-						I have always been very passionate about computers, and having the opportunity be a software engineer now. My position at Daifuku Webb allows
-						me to work with developing for the web on mobile, but I aspire to be an Android/iOS Engineer eventually, as it was one of my favorite areas
-						of study while at EMU! On top of that, I also got some experience developing video games in Unity, and I also built a web application
-						by working with ASP.net, which was an entirely new experience for me at the time! I also got some experience working with databases then
-						which continues into my job today! I love working with mobile devices and building applications for them! If you have any questions, 
-						please feel free to email me!
-					</p>
-				</div>
-				<div class="col-sm-2 col-xs-0"></div>
-		</div>
-		
-		<div id="workhist" class="container classes text-center" style="background-color: #f8f8f8;">
-			<div class="col-sm-2 col-xs-0"></div>
-			<div class="container-fluid col-sm-8 col-xs-12">
-				<h1>Work History!</h1>
-				<p>Oh man, look at the places I've been!</p>
-				<div class="container-fluid containclasses text-left" style="padding:10px">
+		<div class="container-fluid" style="padding: 0px;">
+			<div class="col-sm-6 col-xs-12" id="leftCol">
+				<div id="about" class="col-xs-12 card">
+					<h1>
+						About Me<br />
+						<small>Everyone has a story to tell!</small>
+					</h1>
+					<br />
 					<div class="container-fluid col-xs-12 text-left">
-						<h3>Software Engineer, Daifuku Webb</h3>
-						<h5>Farmington Hills, MI (May 2016 - Present)</h5>
-						<p>Daifuku Webb is a material handlings company that has two major products out right now. SmartView which is a Windows Form Application that manages a AGV or SmartCart system within a manufacturing plant, and WebbView which is the front-end to their baggage handling systems at various airports.</p>
-						<ul>
-							<li>
-								<p>Team Member of SmartView Web Development Team</p>
-								<ul>
-									<li>
-										<p>Lead Programmer in developing the front-end and back-end for the web port of this Windows Form Application</p>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<p>Team Member of WebbView UI Development Team</p>
-								<ul>
-									<li>
-										<p>Initial task began as redesigning the user interface to be mobile friendly. Pitched the idea of implementing Bootstrap to the front-end to help in bringing the WebbView experience to all devices, and was allowed to do so.</p>
-									</li>
-								</ul>
-							</li>
-						</ul>
+						<p>
+							Hello! My name is Kyle!<br /><br />
+							Currently I'm in southeast Michigan, and during the week I make my way out to Farmington Hills to work at Daifuku Webb Holding Co.<br /><br />
+							As a Software Engineer there, I'm currently the lead front-end engineer on developing SmartView for the web. I also took charge of giving their 
+							WebbView product a facelift by first making it more mobile friendly, and then by eventually implementing Bootstrap! I've gotten lots
+							of fantastic feedback on how the UI looks and currently my version of the UI is in use at a hand full of airports across the nation.<br /><br />
+							I graduated with my Bachelor of Science degree in Computer Science from Eastern Michigan University! I did some minor studies
+							in mathematics while there. During my time at EMU, I did some pretty cool stuff! Notably one of my more favored things was my work I
+							did with Housing &amp; Residence Life there in my RA position at Brown/Munson Apartments. I was also apart of Kick and Push Longboarding Club,
+							made the dean's list 6 times, and graduated magna cum laude with a 3.74 cumulative GPA.<br /><br />
+							I've always been very passionate about computers, and I love developing software! My position at Daifuku Webb allows
+							me to work with developing for the web on mobile, but I aspire to be an Android/iOS Engineer eventually, as it was one of my favorite areas
+							of study while at EMU! On top of that, I also got some experience developing video games in Unity, and I also built a web application
+							by working with ASP.net, which was an entirely new experience for me at the time! I also got some experience working with databases then
+							which continues into my job today! I love working with mobile devices and building applications for them! If you have any questions, 
+							please feel free to email me!
+						</p>
 					</div>
-					<div class="container-fluid col-xs-12 text-left">
-						<h3>Resident Advisor, Eastern Michigan University Housing & Residence Life</h3>
-						<h5>Ypsilanti, MI (August 2014 - April 2016)</h5>
-						<ul>
-							<li>
-								<p>
-									Organized/maintained a friendly community in Brown/Munson Apartments. 
-									Assisted residents in various situations. 
-									Planned/Implemented various educational programs. 
-									Demonstrated leadership throughout hall.
-								</p>
-							</li>
-							<li>
-								<p>Wrote a Google Apps Script Web Application that utilizes Google Forms, Google Sheets, Google Calendar, and Gmail to organize and assign move out times for residents throughout the hall.</p>
-							</li>
-						</ul>
+				</div>
+				<div id="featuredWork" class="col-xs-12 card text-center">
+					<h1>Featured Work</h1>
+					<h3>LEGO NXT Bluetooth Robot Android Controller</h3>
+					<div class="container-fluid col-xs-12" id="featProjImageContainer">
+						<img src="images/nxt-controller_1.png" alt="NXT-Controller" style="max-width: 100%;"/>
 					</div>
-					<div class="container-fluid col-xs-12 text-left">
-						<h3>Software Engineering Intern, KLA Laboratories, Inc.</h3>
-						<h5>Dearborn, MI (July 2015 - August 2015)</h5>
-						<ul>
-							<li>
-								<p>Developed a Visual C# Windows form application implementing Microsoft Office libraries to output a spreadsheet used to complete networking surveys.</p>
-							</li>
-						</ul>
+					<div class="container-fluid col-xs-12 text-left" id="featProjDescContainer">
+						<p>
+							This app is a controller for a Lego NXT Mindstorms Robot. Connection is done through Bluetooth. This controller lets you drive your robot with 2 servo motors. My team and I made 2 modes of driving available in the app.
+							<ul>
+								<li>Directional Touch Driving</li>
+								<li>Accelerometer Driving</li>
+							</ul>
+							The app will also tell you how much battery is left on your robot. There is also a tab in the app where you can see the sensors available on the robot, but that is not functional as it was not required for the class.
+						</p>
+						<p>
+							Check out the repository on GitHub!
+						</p>
+						<a class="github-button" href="https://github.com/kszalai/NXT-Controller" data-icon="octicon-eye" data-size="large" data-count-href="/kszalai/NXT-Controller/watchers" data-show-count="true" data-count-aria-label="# watchers on GitHub" aria-label="Watch kszalai/NXT-Controller on GitHub">Watch</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-2 col-xs-0"></div>
-		</div>
-		
-		<div id="experience" class="container bg-2 text-center" style="background-color: #ffffff; padding-bottom: 20px;">
-			<h1>Technical Experience</h1>
-			<div class="col-sm-2 col-xs-0"></div>
-			<div class="container-fluid col-sm-8 col-xs-12">
-				<img src="https://lh6.googleusercontent.com/-ITYKswzHZKM/AAAAAAAAAAI/AAAAAAAAABA/lirdPBLF2cY/photo.jpg" alt="Java" width="15%" height="15%" />
-				<img src="https://lh3.googleusercontent.com/qci3O3w2n6UlAZ-A_bastf5l1yKXsn7U0bASRkg70SHoYUQZ0QgSMjIjPNYt7tOh3OU" alt="Android" width="15%" height="15%" />
-				<img src="http://a2.mzstatic.com/us/r30/Purple1/v4/57/29/db/5729dbcb-9018-a571-d2b3-8f4768007ecc/icon256-2x.png" alt="iOS" width="15%" height="15%"	/>			
-				<img src="http://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="HTML" width="15%" height="15%"/>
-				<img src="http://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" width="15%" height="15%" />
-				<img src="http://www.techclinch.com/wp-content/uploads/2014/12/LISP_logo_big.png" alt="LISP" width="15%" height="15%"/>
-				<div class="col-xs-12 text-left">
-					<p>
-					I have lots and lots of experience in programming in Java, which makes it my primary choice of language. It's what EMU uses for their curriculum, and that helped vastly when learning
-					how to develop Android applications! On top of that, I also know Swift and can develop for iOS as well. I also have experience with C# as
-					I used it when developing video games in Unity, as well	as developing with ASP.net. I also got plenty of experience with C# while at my internship
-					at KLA Labs! I also had the opportunity to get some experience with Intel Assembly and C when taking my Operating Systems class, where we
-					built a base for our own version of Linux from scratch. I also have experience with Google Apps Script, as I am developed a web app 
-					for EMU's Housing & Residence Life department that will assisted in scheduling move outs for the RAs for their residents. I'm also currently teaching
-					myself TypeScript and Angular 2 to build much better web apps!
-					</p>
+			<div class="col-sm-6 col-xs-12" id="rightCol">
+				<div id="skills" class="col-xs-12 card">
+					<h1>
+						Skills<br />
+						<small>I'm a Software Engineer that likes to focus on Mobile &amp; Web Developement!</small>
+					</h1>
+					<div class="col-xs-12" style="padding: 0px 24px;">
+						<h4>Platforms</h4>
+						<i class="devicon-android-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="Android"></i>
+						<i class="devicon-apple-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="iOS"></i>
+						<i class="devicon-windows8-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="Windows"></i>
+						<br />
+						<h4>Languages</h4>
+						<i class="devicon-java-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="Java"></i>
+						<i class="devicon-csharp-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="C#"></i>
+						<i class="devicon-python-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="Python"></i>
+						<i class="devicon-apple-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="Swift"></i>
+						<i class="devicon-c-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="C"></i>
+						<br />
+						<i class="devicon-typescript-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="TypeScript"></i>
+						<i class="devicon-javascript-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="JavaScript"></i>
+						<i class="devicon-jquery-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="jQuery"></i>
+						<i class="devicon-html5-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="HTML5"></i>
+						<i class="devicon-css3-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="CSS3"></i>
+						<i class="devicon-sass-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="Sass"></i>
+						<br />
+						<h4>Frameworks</h4>
+						<i class="devicon-angularjs-plain colored"  data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="Angular 2/4"></i>
+						<i class="devicon-bootstrap-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="Bootstrap"></i>
+						<i class="devicon-nodejs-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="node.js"></i>
+						<i class="devicon-dotnet-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title=".NET"></i>
+						<br />
+						<h4>Source Control/Tools</h4>
+						<i class="devicon-git-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="Git"></i>
+						<i class="devicon-github-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="GitHub"></i>
+						<i class="devicon-gitlab-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="GitLab"></i>
+						<i class="devicon-sourcetree-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="Subversion"></i>
+						<i class="devicon-gulp-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="Gulp"></i>
+						<h4>Database</h4>
+						<i class="devicon-mysql-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="MySQL"></i>
+						<i class="devicon-windows8-plain colored" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="MSSQL"></i>
+						<br />
+						<br />
+						<p>
+							I have lots and lots of experience in programming in Java, which makes it my primary choice of language. It's what EMU uses for their curriculum, and that helped vastly when learning
+							how to develop Android applications! On top of that, I also know Swift and can develop for iOS as well. I also have experience with C# as
+							I used it when developing video games in Unity, as well	as developing with ASP.net. I also got plenty of experience with C# while at my internship
+							at KLA Labs! I also had the opportunity to get some experience with Intel Assembly and C when taking my Operating Systems class, where we
+							built a base for our own version of Linux from scratch. I also have experience with Google Apps Script, as I am developed a web app 
+							for EMU's Housing &amp; Residence Life department that will assisted in scheduling move outs for the RAs for their residents. I'm also currently teaching
+							myself TypeScript and Angular 2 to build much better web apps!
+						</p>
+					</div>
+				</div>
+				<div id="workhist" class="col-xs-12 card text-center">
+					<h1>
+						Work History!<br />
+						<small>Oh man, look at the places I've been!</small>
+					</h1>
+					<div class="containclasses text-left">
+						<div class="container-fluid col-xs-12 text-left">
+							<h3>Software Engineer, Daifuku Webb</h3>
+							<h5>Farmington Hills, MI (May 2016 - Present)</h5>
+							<p>Daifuku Webb is a material handlings company that has two major products out right now. SmartView which is a Windows Form Application that manages a AGV or SmartCart system within a manufacturing plant, and WebbView which is the front-end to their baggage handling systems at various airports.</p>
+							<ul>
+								<li>
+									<p>Lead Front End Engineer of SmartView Web Development Team</p>
+									<ul>
+										<li>
+											<p>
+												New port of SmartView Windows Form App to the web. Using Angular 2 as a framework, and TypeScript as the language to power the app, 
+												a new web based application is being built for the modern web. The new app is to be mobile friendly, so Bootstrap and a material design 
+												theme defined using Sass was implemented for a more "app like" feel. Additional modules for Angular were implemented from NPM and Gulp 
+												was used for completing small repeatable tasks in Visual Studio.<br />
+												<b><u>Technologies used for developement</u></b><br />
+												<i class="devicon-angularjs-plain colored"></i>
+												<i class="devicon-typescript-plain colored"></i>
+												<i class="devicon-nodejs-plain colored"></i>
+												<i class="devicon-dot-net-plain colored"></i>
+												<i class="devicon-sass-plain colored"></i>
+												<i class="devicon-html5-plain colored"></i>
+												<i class="devicon-css3-plain colored"></i>
+												<i class="devicon-bootstrap-plain colored"></i>
+												<i class="devicon-gulp-plain colored"></i>
+												<i class="devicon-gitlab-plain colored"></i>
+											</p>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<p>Team Member of WebbView UI Development Team</p>
+									<ul>
+										<li>
+											<p>
+												Initial task began as redesigning the user interface to be mobile friendly. 
+												Pitched the idea of implementing Bootstrap to the front-end to help in bringing 
+												the WebbView experience to all devices, and was allowed to do so. Still assisting 
+												with fixing various bugs found in the system.<br />
+												<b><u>Technologies used for developement</u></b><br />
+												<i class="devicon-csharp-plain colored"></i>
+												<i class="devicon-dot-net-plain colored"></i>
+												<i class="devicon-javascript-plain colored"></i>
+												<i class="devicon-jquery-plain colored"></i>
+												<i class="devicon-html5-plain colored"></i>
+												<i class="devicon-css3-plain colored"></i>
+												<i class="devicon-bootstrap-plain colored"></i>
+												<i class="devicon-gitlab-plain colored"></i>
+											</p>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="container-fluid col-xs-12 text-left">
+							<h3>Resident Advisor, Eastern Michigan University Housing &amp; Residence Life</h3>
+							<h5>Ypsilanti, MI (August 2014 - April 2016)</h5>
+							<ul>
+								<li>
+									<p>
+										Organized/maintained a friendly community in Brown/Munson Apartments. 
+										Assisted residents in various situations. 
+										Planned/Implemented various educational programs. 
+										Demonstrated leadership throughout hall.
+									</p>
+								</li>
+								<li>
+									<p>
+										Wrote a Google Apps Script Web Application that utilizes Google Forms, 
+										Google Sheets, Google Calendar, and Gmail to organize and assign move 
+										out times for residents throughout the hall.
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div class="container-fluid col-xs-12 text-left">
+							<h3>Software Engineering Intern, KLA Laboratories, Inc.</h3>
+							<h5>Dearborn, MI (July 2015 - August 2015)</h5>
+							<ul>
+								<li>
+									<p>
+										Developed a Visual C# Windows Form Application implementing Microsoft Office 
+										libraries to output a spreadsheet used to complete networking surveys.<br />
+										<b><u>Technologies used for developement</u></b><br />
+										<i class="devicon-csharp-plain colored"></i>
+										<i class="devicon-dot-net-plain colored"></i>
+										<i class="devicon-windows8-plain colored"></i>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="col-sm-2 col-xs-0"></div>
 		</div>
-		<!-- End Main Content of Page -->
-		<br />
-		<!-- Footer -->
-		<div class="container footer">
-			<div class="container-fluid text-left col-xs-6">
+		<div class="container footer card">
+			<div class="col-xs-6 text-left">
 				<h6>Made with <span class="glyphicon glyphicon-heart"></span> in Ypsilanti</h6>
 				<h6>Thanks to GitHub for hosting!</h6>
 			</div>
-			<div class="container-fluid text-right col-xs-6">
+			<div class="col-xs-6 text-right">
 				<h6> 
 					Last changed: 
 					<script language="JavaScript" type="text/javascript">
 						document.write(document.lastModified);
 					</script>
 					<br />
-					<a href="http://wallwindow.com/wp-content/uploads/2014/09/galaxy-hipster-wallpaper.jpg">Background Source</a>
-					<br />
-					&copy; Kyle Szalai 2016
+					&copy; Kyle Szalai 2017
 				</h6>
 			</div>
 		</div>
-		<!-- End Footer -->
 		<script>
 			$(document).ready(function(){
 				$('[data-toggle="tooltip"]').tooltip();   
