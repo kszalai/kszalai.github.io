@@ -111,6 +111,12 @@ a{
 	& .navbar-toggle:focus, & .navbar-toggle:hover {
 		background-color: $primaryColorDark;
 	}
+
+	@media (max-width: 767px){
+		& .navbar-nav .open .dropdown-menu>li>a {
+			color: $primaryTextColor_dark;
+		}
+	}
 }
 
 .navbar-brand	{

@@ -74,6 +74,10 @@ a {
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background-color: #0039cb; }
 
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: white; } }
+
 .navbar-brand {
   padding: 8px; }
   .navbar-brand a > i {
