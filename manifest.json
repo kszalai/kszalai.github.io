@@ -1,0 +1,16 @@
+{
+    "short_name": "kszalai",
+    "name": "kszalai.github.io",
+    "icons":[
+        {
+            "src": "images/KS_logo.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "orientation": "any",
+    "theme_color": "#2162FF",
+    "background_color": "#2162FF"
+}
