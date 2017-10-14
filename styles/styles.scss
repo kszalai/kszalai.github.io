@@ -38,26 +38,22 @@ h2.a	{
 
 /*Links*/
 a{
-	/*Unvisited Link*/
-	&:link {
+	&:link { /*Unvisited Link*/
 		color:#2196f3;
 		background-color:transparent;
 		text-decoration:none;
 	}
-	/*Visited Link*/
-	&:visited {
+	&:visited { /*Visited Link*/
 		color:#0a6ebd;
 		background-color:transparent;
 		text-decoration:none;
 	}
-	/*Mouse over link*/
-	&:hover	{
+	&:hover	{ /*Mouse over link*/
 		color:#0a6ebd; 
 		background-color:transparent; 
 		text-decoration:underline;
 	}
-	/*Selected Link*/
-	&:active {
+	&:active { /*Selected Link*/
 		color:#0a6ebd;
 		background-color:transparent; 
 		text-decoration:underline;
@@ -74,30 +70,25 @@ a{
 	border-radius: 0px 0px 0px 0px;
 	-webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
 	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: $textColorOnPrimary;
-	-webkit-transition: color 0.275s, background-color 0.275s;
-	transition: color 0.275s, background-color 0.275s;
-}
-
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: $textColorOnPrimary;
-    background-color: $primaryColorDark;
-}
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: $textColorOnPrimary;
-    background-color: $primaryColorDark;
-}
-
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    color: $textColorOnPrimary;
-    background-color: $primaryColorDark;
-}
-
-.navbar-default {
+	.navbar-nav{
+		>li{
+			>a{
+				color: $textColorOnPrimary;
+				-webkit-transition: color 0.275s, background-color 0.275s;
+				transition: color 0.275s, background-color 0.275s;
+				&:focus, &:hover{
+					color: $textColorOnPrimary;
+					background-color: $primaryColorDark;
+				}
+			}
+		}
+		>.active, >.open{
+			>a, >a:focus, >a:hover{
+				color: $textColorOnPrimary;
+				background-color: $primaryColorDark;
+			}
+		}
+	}
 	.navbar-collapse{
 		border-color: $primaryColor;
 	}

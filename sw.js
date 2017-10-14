@@ -2,7 +2,7 @@ var CACHE_NAME = "kszalai-github-io-cache-v1";
 var urlsToCache = [
     '/index.html',
     '/sw.js',
-    '/styles/styles.css',
+    '/styles/styles.min.css',
     '/fonts/font-awesome/css/font-awesome.css',
     '/fonts/font-awesome/css/font-awesome.min.css',
     '/fonts/font-awesome/fonts/fontawesome-webfont.eot',
